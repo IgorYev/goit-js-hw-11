@@ -27,6 +27,8 @@
     box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
   }
   .photo-card img {
     max-width: 100%;
@@ -37,6 +39,7 @@
     background-color: #ffffff;
     display: flex;
     gap: 5px;
+    font-weight: 500;
   }
   p{
     margin: 0;
