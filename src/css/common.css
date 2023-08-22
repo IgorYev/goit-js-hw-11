@@ -1,0 +1,43 @@
+.container {
+    text-align: center;
+    padding: 20px;
+  }
+  .search-form {
+    margin-bottom: 20px;
+  }
+  .image-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .image-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+  }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .photo-card {
+    width: calc(25% - 30px);
+    height: auto;
+    margin: 15px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .photo-card img {
+    max-width: 100%;
+    max-height: auto;
+  }
+  .photo-card .info {
+    padding: 5px;
+    background-color: #ffffff;
+    display: flex;
+    gap: 5px;
+  }
+  p{
+    margin: 0;
+  }
