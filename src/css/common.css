@@ -4,6 +4,7 @@
   }
   .search-form {
     margin-bottom: 20px;
+
   }
   .image-list {
     display: flex;
@@ -44,3 +45,4 @@
   p{
     margin: 0;
   }
+  

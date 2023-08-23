@@ -1,4 +1,4 @@
-import { fetchImages } from './api';
+import { fetchImages } from './js/api';
 import notiflix from 'notiflix';
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
@@ -16,15 +16,15 @@ searchForm.addEventListener('submit', async event => {
   page = 1;
   currentQuery = event.target.searchQuery.value;
   gallery.innerHTML = '';
-
   await fetchAndRenderImages();
-  loadMoreBtn.style.display = 'block';
 });
 
 loadMoreBtn.addEventListener('click', async () => {
   page++;
   await fetchAndRenderImages();
 });
+
+const lightbox = new SimpleLightbox('.lightbox-link');
 
 async function fetchAndRenderImages() {
   try {
@@ -50,7 +50,6 @@ async function fetchAndRenderImages() {
       );
     }
 
-    const lightbox = new SimpleLightbox('.lightbox-link');
     lightbox.refresh();
   } catch (error) {
     console.error('Error fetching data:', error);
